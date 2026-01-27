@@ -108,7 +108,14 @@ const Footer = () => {
             </div>
             <div className="flex items-center space-x-2 bg-(--c4) px-4 py-2 rounded-lg">
               <CheckCircle className="w-4 h-4 text-(--c1)" />
-              <span className="text-gray-600 text-xs">ESOMAR Member</span>
+              <a
+                href={`${import.meta.env.BASE_URL}public/ESOMAR.pdf`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 text-xs cursor-pointer"
+              >
+                ESOMAR Member
+              </a>
             </div>
           </div>
         </div>
