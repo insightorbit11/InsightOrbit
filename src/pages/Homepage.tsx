@@ -341,7 +341,7 @@ const HomePage = () => {
             ))}
           </div>
 
-          <div className="relative z-10 max-w-5xl mx-auto px-4 text-center mt-6">
+          <div className="relative z-10 max-w-5xl mx-auto md:px-4 px-5 text-center mt-6">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -354,12 +354,11 @@ const HomePage = () => {
                 </span>
               </div>
 
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                <span className="bg-linear-to-r capitalize from-(--c1) via-blue-600 to-(--c1) bg-clip-text text-transparent">
+              <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+                <span className="bg-linear-to-r capitalize from-(--c1) via-blue-600 to-(--c1) bg-clip-text text-transparent flex flex-nowrap items-center justify-center text-nowrap">
                   Insights Elevated.
                 </span>
-                <br />
-                <span className="bg-linear-to-r capitalize from-(--c1) via-blue-600 to-(--c1) bg-clip-text text-transparent">
+                <span className="bg-linear-to-r capitalize from-(--c1) via-blue-600 to-(--c1) bg-clip-text text-transparent flex flex-nowrap items-center justify-center text-nowrap">
                   Emotions understood.
                 </span>
               </h1>
