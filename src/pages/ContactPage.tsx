@@ -183,12 +183,12 @@ const ContactPage = () => {
                   Website
                 </h3>
                 <a
-                  href="https://www.insightorbit.org"
+                  href="https://insightorbit.org"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-(--c1) hover:text-(--c1)/80 transition-colors"
                 >
-                  www.insightorbit.org
+                  insightorbit.org
                 </a>
               </div>
             </motion.div>
