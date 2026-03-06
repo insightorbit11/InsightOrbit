@@ -262,56 +262,48 @@ const HomePage = () => {
 
   const faqs = [
     {
-      q: "What research practices and methodologies do you follow?",
-      a: "We follow European Society for Opinion & Market Research (ESOMAR)- compliant standards, along with principles of behavioural science. Our methodologies integrate quantitative surveys, qualitative insights, sentiment analysis, and pattern recognition to capture both data and human context.",
-    },
-    {
-      q: "What makes InsightOrbit different from other research agencies?",
-      a: "We don't just collect data—we uncover human truths. By blending behavioral psychology with advanced research design, we transform raw responses into strategic clarity. Our focus is on emotions, motivations, and unspoken expectations, not just numbers.",
-    },
-    {
-      q: "What industries do you serve?",
-      a: "We work across diverse sectors including retail, technology, healthcare, finance, education, and consumer goods. Our human-centric approach adapts to any industry where understanding customer behavior drives success.",
-    },
-    {
-      q: "How long does a typical research project take?",
-      a: "Project timelines vary based on scope and complexity. Simple surveys may take 2-3 weeks, while comprehensive studies with deep analysis can span 6-8 weeks. We provide clear timelines during initial consultation.",
+      q: "How does InsightOrbit ensure data quality and accuracy?",
+      a: "At InsightOrbit, data quality starts at the question level. We employ psychology-backed questionnaire design, strong sampling logic, and multilayer validation checks to ensure insights are reliable, unbiased, and decision-ready.",
     },
     {
       q: "How does InsightOrbit build and manage dedicated research panels or communities?",
       a: "InsightOrbit builds dedicated research panels and communities where your target audience can share opinions, ideas, and experiences in a structured digital environment, enabling deeper and continuous insights. We follow a simple philosophy: genuine panelists lead to quality responses, as authentic input from real participants is essential for generating reliable data and actionable insights. Through rigorous screening and high-quality recruitment sources, we ensure diverse and credible panel representation across multiple demographic and population segments. We also foster a rewarding panel experience through engaging interactions, innovative incentives, and meaningful participation opportunities.",
     },
     {
-      q: "Do you offer international research capabilities?",
-      a: "Yes! We design multilingual questionnaires and conduct research across global markets, ensuring cultural nuances are captured accurately for meaningful insights.",
+      q: "What is the minimum sample size required to conduct a reliable study?",
+      a: "Sample size varies based on your goals, target audience, and market scope. We recommend statistically valid sample sizes that strike a balance between accuracy and efficiency, ensuring insights are meaningful without collecting excess data.",
     },
     {
-      q: "What deliverables can we expect?",
-      a: "You'll receive comprehensive reports with data visualizations, executive summaries, behavioral insights, predictive analysis, and prioritized action recommendations—all designed to drive strategic decision-making.",
+      q: "What research practices and methodologies do you follow?",
+      a: "We follow European Society for Opinion & Market Research (ESOMAR)- compliant standards, along with principles of behavioural science. Our methodologies integrate quantitative surveys, qualitative insights, sentiment analysis, and pattern recognition to capture both data and human context.",
     },
     {
-      q: "How do you ensure data quality and authenticity?",
-      a: "We employ rigorous validation protocols, behavioral screening, and advanced analytics to filter noise and ensure authentic responses. Our methodology is grounded in psychological principles for maximum reliability.",
+      q: "Is personal and respondent data protected and confidential?",
+      a: "Yes. Respondent privacy and data protection are fundamental to our research practices. All participant information is anonymised and securely stored. InsightOrbit never sells, shares, or discloses respondent data, ensuring strict confidentiality and ethical handling at every stage of the research process.",
     },
     {
-      q: "In what ways does InsightOrbit differ from other market research companies?",
-      a: "Traditional firms deliver data. InsightOrbit delivers clarity. We are not just a survey company. We are a psychological market readiness engine. We help founders, brands, and enterprises: Launch new products, validate market fit, understand behavioural triggers and identify early adopters.",
-    },
-    {
-      q: "How does InsightOrbit address the cultural and linguistic diversity of India?",
-      a: "We create questionnaires that are easy to understand and culturally aware. Our process takes into account India's diverse behaviours. This way, we ensure that the insights we gather are relevant to local contexts while also being useful across the country.",
-    },
-    {
-      q: "How long does it take for a respondent to complete a survey?",
-      a: "Attention and time are respected with our surveys. Most questionnaires take 5–10 minutes to avoid respondent fatigue, making it encouraging while capturing depth and clarity.",
+      q: "Do your surveys comply with the data protection standards?",
+      a: "Yes, our practices for research are in line with laws related to data protection and guidelines on ethical research. Consent, transparency, and respondent dignity are cornerstones of every InsightOrbit study",
     },
     {
       q: "How long does the average research or survey project take?",
       a: "Project timelines vary by scope and complexity. Most surveys are completed within 4–6 weeks, including design, data collection, analysis report, and strategic recommendations.",
     },
     {
-      q: "Is personal and respondent data protected and confidential?",
-      a: "Yes. Respondent privacy and data protection are fundamental to our research practices. All participant information is anonymised and securely stored. InsightOrbit never sells, shares, or discloses respondent data, ensuring strict confidentiality and ethical handling at every stage of the research process.",
+      q: "How long does it take for a respondent to complete a survey?",
+      a: "Attention and time are respected with our surveys. Most questionnaires take 5–10 minutes to avoid respondent fatigue, making it encouraging while capturing depth and clarity.",
+    },
+    {
+      q: "Why do people participate in an InsightOrbit survey?",
+      a: "We design surveys that are engaging, respectful of respondents’ time, and meaningful in purpose. Participants feel valued because their opinions directly contribute to shaping better products, services, and experiences for the wider community.",
+    },
+    {
+      q: "How does InsightOrbit address the cultural and linguistic diversity of India?",
+      a: "We create questionnaires that are easy to understand and culturally aware. Our process takes into account India's diverse behaviours. This way, we ensure that the insights we gather are relevant to local contexts while also being useful across the country.",
+    },
+    {
+      q: "In what ways does InsightOrbit differ from other market research companies?",
+      a: "Traditional firms deliver data. InsightOrbit delivers clarity. We are not just a survey company. We are a psychological market readiness engine. We help founders, brands, and enterprises: Launch new products, validate market fit, understand behavioural triggers and identify early adopters.",
     },
   ];
 
@@ -335,7 +327,7 @@ const HomePage = () => {
   return (
     <>
       <SEO
-        title="Home - Transform Data into Human Truths"
+        title="Insight Elevated. Emotions Understood."
         description="We don't just collect data—we uncover human truths. By blending behavioral psychology with advanced research design, we transform raw responses into strategic clarity."
         keywords="market research, consumer insights, behavioral psychology, data analytics, survey design, business intelligence, growth strategy"
         canonical="/"
