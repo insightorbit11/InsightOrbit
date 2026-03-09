@@ -17,7 +17,7 @@ const ServicesPage = () => {
   const services: Service = [
     {
       id: "research-methodology",
-      imgUrl: "/assets/research-method.jpg",
+      imgUrl: "/research-method.jpg",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ const ServicesPage = () => {
     },
     {
       id: "custom-questionnaires",
-      imgUrl: "/assets/questionnaire.jpg",
+      imgUrl: "/questionnaire.jpg",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +109,7 @@ const ServicesPage = () => {
     },
     {
       id: "authentic-data-collection",
-      imgUrl: "/assets/data-collection.jpg",
+      imgUrl: "/data-collection.jpg",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -160,7 +160,7 @@ const ServicesPage = () => {
     },
     {
       id: "reporting-analytics",
-      imgUrl: "/assets/reporting-analytics.jpg",
+      imgUrl: "/reporting-analytics.jpg",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -206,7 +206,7 @@ const ServicesPage = () => {
     },
     {
       id: "growth-recommendations",
-      imgUrl: "/assets/growth-recommendations.jpg",
+      imgUrl: "/growth-recommendations.jpg",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
