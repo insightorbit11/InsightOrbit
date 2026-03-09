@@ -4,6 +4,7 @@ import Button from "../components/Button";
 
 type Service = {
   id: string;
+  imgUrl: string;
   title: string;
   description: string;
   svg: React.ReactNode;
@@ -16,6 +17,7 @@ const ServicesPage = () => {
   const services: Service = [
     {
       id: "research-methodology",
+      imgUrl: "/assets/research-method.jpg",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -66,6 +68,7 @@ const ServicesPage = () => {
     },
     {
       id: "custom-questionnaires",
+      imgUrl: "/assets/questionnaire.jpg",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -106,6 +109,7 @@ const ServicesPage = () => {
     },
     {
       id: "authentic-data-collection",
+      imgUrl: "/assets/data-collection.jpg",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -156,6 +160,7 @@ const ServicesPage = () => {
     },
     {
       id: "reporting-analytics",
+      imgUrl: "/assets/reporting-analytics.jpg",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -201,6 +206,7 @@ const ServicesPage = () => {
     },
     {
       id: "growth-recommendations",
+      imgUrl: "/assets/growth-recommendations.jpg",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -376,27 +382,31 @@ const ServicesPage = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.1 }}
-                className="bg-(--c5) backdrop-blur-md border border-white/10 rounded-3xl p-8 md:p-12 hover:border-(--c1)/30 transition-all"
+                className="relative overflow-hidden border border-white/20 rounded-3xl p-8 md:p-12 hover:border-(--c1)/40 transition-all bg-center bg-cover bg-no-repeat"
+                style={{ backgroundImage: `url(${service.imgUrl})` }}
                 id={service.id}
               >
-                <div className="flex flex-col md:flex-row gap-8">
+                {/* Dark overlay keeps text legible across varied image tones. */}
+                <div className="absolute inset-0 bg-linear-to-r from-slate-950/80 via-slate-900/75 to-slate-900/70" />
+
+                <div className="relative z-10 flex flex-col md:flex-row gap-8">
                   <div className="shrink-0">
-                    <div className="bg-linear-to-br from-amber-400/20 to-blue-400/20 w-20 h-20 rounded-2xl flex items-center justify-center">
+                    <div className="bg-white/90 w-20 h-20 rounded-2xl flex items-center justify-center shadow-lg">
                       {service.svg}
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h2 className="text-2xl md:text-3xl font-bold text-gray-700 mb-4">
+                    <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
                       {service.title}
                     </h2>
-                    <p className="text-gray-600 mb-6 leading-relaxed">
+                    <p className="text-slate-100 mb-6 leading-relaxed">
                       {service.description}
                     </p>
                     <div className="grid sm:grid-cols-2 gap-3">
                       {service.features.map((feature, fidx) => (
                         <div key={fidx} className="flex items-start space-x-2">
-                          <CheckCircle className="w-5 h-5 text-(--c1) shrink-0 mt-0.5" />
-                          <span className="text-gray-500">{feature}</span>
+                          <CheckCircle className="w-5 h-5 text-amber-300 shrink-0 mt-0.5" />
+                          <span className="text-white/90">{feature}</span>
                         </div>
                       ))}
                     </div>

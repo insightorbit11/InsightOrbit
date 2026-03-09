@@ -472,8 +472,16 @@ const WhyUsPage = () => {
               More Than a Research Provider
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed text-center mx-auto border-b border-(--c1)/30 pb-6 mb-6">
-              We are your partner in navigating growth, risk, and change through
-              a deep understanding of what people truly feel.
+              We are not just a survey company. We are a psychological market
+              readiness engine. We help founders, brands, and enterprises:
+              Launch new products, validate market fit, understand behavioral
+              triggers and identify early adopters. Instead of asking
+              surface-level survey questions, we map psychological positions,
+              where customers actually stand: Are they problem-aware? Are they
+              solution-aware? Are they price-sensitive or value-driven? Are they
+              emotionally ready to switch? What objections are subconscious vs
+              logical? This allows you to validate not just demand, but intent,
+              readiness, and conversion probability.
             </p>
             <div className="flex items-center justify-center flex-col space-y-3">
               <p>This is where human truth becomes strategy.</p>

@@ -7,3 +7,7 @@
   --c4: #cce2ff;
   --c5: #daeaf7;
 }
+
+html {
+  scroll-behavior: smooth;
+}

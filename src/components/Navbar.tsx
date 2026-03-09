@@ -39,6 +39,10 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
+                {...(link.label === "Services" ||
+                link.label === "Why InsightOrbit"
+                  ? { target: "_blank" }
+                  : {})}
                 className={`text-sm font-medium transition-colors ${
                   location.pathname === link.path
                     ? "text-[#0855b1]"
