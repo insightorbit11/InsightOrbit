@@ -3,6 +3,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Button from "../components/Button";
 import SEO from "../components/SEO";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
@@ -137,11 +138,18 @@ const HomePage = () => {
                   href="#reach-out"
                   backIcon={<ArrowRight className="w-4 h-4" />}
                 />
-                <Button
+                {/* <Button
                   text="Explore Services"
                   type="secondary"
                   href="/services"
-                />
+                /> */}
+                <Link
+                  to="/services"
+                  target="_blank"
+                  className="px-8 py-4 bg-white/10 backdrop-blur-md border border-(--c1) text-gray-200 rounded-full font-semibold cursor-pointer"
+                >
+                  Explore Services
+                </Link>
               </div>
             </motion.div>
           </div>
