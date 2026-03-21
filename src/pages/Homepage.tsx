@@ -132,17 +132,6 @@ const HomePage = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-start items-center mb-4">
-                <Button
-                  text="Start Your Journey"
-                  type="primary"
-                  href="#reach-out"
-                  backIcon={<ArrowRight className="w-4 h-4" />}
-                />
-                {/* <Button
-                  text="Explore Services"
-                  type="secondary"
-                  href="/services"
-                /> */}
                 <Link
                   to="/services"
                   target="_blank"
@@ -150,6 +139,12 @@ const HomePage = () => {
                 >
                   Explore Services
                 </Link>
+                <Button
+                  text="Start Your Journey"
+                  type="primary"
+                  href="#reach-out"
+                  backIcon={<ArrowRight className="w-4 h-4" />}
+                />
               </div>
             </motion.div>
           </div>
