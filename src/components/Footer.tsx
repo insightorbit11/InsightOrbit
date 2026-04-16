@@ -92,7 +92,9 @@ const Footer = () => {
                 <span className="text-gray-600">|</span>
                 <a href="tel:+918448790050">+91 8448790050</a>
               </p>
-              <a href="https://www.insightorbit.org">www.insightorbit.org</a>
+              <a href="https://insightorbit.org" target="_blank">
+                insightorbit.org
+              </a>
             </div>
           </div>
         </div>
