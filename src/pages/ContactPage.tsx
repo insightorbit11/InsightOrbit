@@ -110,7 +110,6 @@ const ContactPage = () => {
                     </a>
                   </div>
                 </div>
-
                 <div className="flex items-start space-x-4">
                   <div className="bg-blue-400/20 p-3 rounded-lg">
                     <svg
@@ -145,37 +144,14 @@ const ContactPage = () => {
                     <div className="text-gray-600 text-sm mb-1">Call Us</div>
                     <div className="flex md:flex-row flex-col items-center md:gap-2">
                       <a
-                        href="tel:+919625133538"
+                        href="tel:+918447659509"
                         className="text-gray-500 hover:text-(--c1) transition-colors"
                       >
-                        +91 9625133538
-                      </a>
-                      <span className="text-gray-600 md:block hidden">|</span>
-                      <a
-                        href="tel:+918448790050"
-                        className="text-gray-500 hover:text-(--c1) transition-colors"
-                      >
-                        +91 8448790050
+                        +91 8447659509
                       </a>
                     </div>
                   </div>
                 </div>
-
-                {/* <div className="flex items-start space-x-4">
-                <div className="bg-amber-400/20 p-3 rounded-lg">
-                  <MapPin className="w-6 h-6 text-amber-400" />
-                </div>
-                <div>
-                  <div className="text-gray-400 text-sm mb-1">Visit Us</div>
-                  <p className="text-white">
-                    123 Business District
-                    <br />
-                    Innovation Hub, Suite 456
-                    <br />
-                    City, State 12345
-                  </p>
-                </div>
-              </div> */}
               </div>
 
               <div className="mt-10 pt-8 border-t border-white/10">
@@ -310,7 +286,7 @@ const ContactPage = () => {
                   <span>Send Email</span>
                 </motion.button>
               </a>
-              <a href="tel:+919625133538">
+              <a href="tel:+918447659509">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

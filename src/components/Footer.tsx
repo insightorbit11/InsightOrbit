@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-(--c5) border-t-5 border-(--c1)/20 hover:border-(--c1)/40 rounded-t-lg transition-all py-12 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="flex flex-wrap justify-between gap-8 mb-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Logo />
@@ -88,9 +88,7 @@ const Footer = () => {
                 </a>
               </p>
               <p className="flex items-center gap-2">
-                <a href="tel:+919625133538">+91 9625133538</a>
-                <span className="text-gray-600">|</span>
-                <a href="tel:+918448790050">+91 8448790050</a>
+                <a href="tel:+918447659509">+91 8447659509</a>
               </p>
               <a href="https://insightorbit.org" target="_blank">
                 insightorbit.org
