@@ -1,13 +1,15 @@
 export const handleEmailRedirect = (provider: string) => {
   const email = "insightorbit11@gmail.com";
 
-  let url = "";
-
   if (provider === "gmail") {
-    url = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
+    window.open(
+      `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`,
+      "_blank",
+    );
   } else if (provider === "outlook") {
-    url = `https://outlook.live.com/mail/0/deeplink/compose?to=${email}`;
+    window.open(
+      `https://outlook.live.com/mail/0/deeplink/compose?to=${email}`,
+      "_blank",
+    );
   }
-
-  window.location.href = `mailto:${email}`;
 };

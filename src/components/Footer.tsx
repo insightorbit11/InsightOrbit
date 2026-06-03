@@ -7,6 +7,7 @@ import RedirectModal from "./RedirectModal";
 
 const Footer = () => {
   const [showModal, setShowModal] = useState(false);
+  const isMobile = window.innerWidth <= 768;
 
   return (
     <footer className="bg-(--c5) border-t-5 border-(--c1)/20 hover:border-(--c1)/40 rounded-t-lg transition-all py-12 px-4">
@@ -88,12 +89,21 @@ const Footer = () => {
             <h3 className="text-gray-700 font-semibold mb-4">Contact</h3>
             <div className="space-y-2 text-sm text-gray-600">
               <p>
-                <button
-                  onClick={() => setShowModal(true)}
-                  className="text-gray-600 hover:text-(--c1) transition-colors"
-                >
-                  insightorbit11@gmail.com
-                </button>
+                {isMobile ? (
+                  <a
+                    href="mailto:insightorbit11@gmail.com"
+                    className="text-gray-500 hover:text-(--c1) transition-colors"
+                  >
+                    insightorbit11@gmail.com
+                  </a>
+                ) : (
+                  <button
+                    onClick={() => setShowModal(true)}
+                    className="text-gray-500 hover:text-(--c1) transition-colors"
+                  >
+                    insightorbit11@gmail.com
+                  </button>
+                )}
               </p>
               <p className="flex items-center gap-2">
                 <a href="tel:+918447659509">+91 8447659509</a>
