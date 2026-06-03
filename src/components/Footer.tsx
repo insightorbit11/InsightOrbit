@@ -1,12 +1,17 @@
 import { Award, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
+import { useState } from "react";
+import { handleEmailRedirect } from "../redirectMail";
+import RedirectModal from "./RedirectModal";
 
 const Footer = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <footer className="bg-(--c5) border-t-5 border-(--c1)/20 hover:border-(--c1)/40 rounded-t-lg transition-all py-12 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-wrap justify-between gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Logo />
@@ -83,9 +88,12 @@ const Footer = () => {
             <h3 className="text-gray-700 font-semibold mb-4">Contact</h3>
             <div className="space-y-2 text-sm text-gray-600">
               <p>
-                <a href="mailto:insightorbit11@gmail.com">
+                <button
+                  onClick={() => setShowModal(true)}
+                  className="text-gray-600 hover:text-(--c1) transition-colors"
+                >
                   insightorbit11@gmail.com
-                </a>
+                </button>
               </p>
               <p className="flex items-center gap-2">
                 <a href="tel:+918447659509">+91 8447659509</a>
@@ -114,12 +122,20 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-gray-600 text-xs cursor-pointer"
               >
-                ESOMAR Member
+                Compliant with ESOMAR
               </a>
             </div>
           </div>
         </div>
       </div>
+      {showModal && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <RedirectModal
+            handleEmailRedirect={handleEmailRedirect}
+            setShowModal={setShowModal}
+          />
+        </div>
+      )}
     </footer>
   );
 };

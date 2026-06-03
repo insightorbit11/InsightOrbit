@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import { CheckCircle, Sparkles } from "lucide-react";
 import SEO from "../components/SEO";
+import { handleEmailRedirect } from "../redirectMail";
+import { useState } from "react";
+import RedirectModal from "../components/RedirectModal";
 
 const ContactPage = () => {
   const structuredData = {
@@ -12,6 +15,8 @@ const ContactPage = () => {
       email: "insightorbit11@gmail.com",
     },
   };
+
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <>
@@ -102,12 +107,12 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <div className="text-gray-600 text-sm mb-1">Email Us</div>
-                    <a
-                      href="mailto:insightorbit11@gmail.com"
+                    <button
+                      onClick={() => setShowModal(true)}
                       className="text-gray-500 hover:text-(--c1) transition-colors"
                     >
                       insightorbit11@gmail.com
-                    </a>
+                    </button>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -230,8 +235,9 @@ const ContactPage = () => {
               how InsightOrbit can illuminate the path to your business success.
             </p>
             <div className="flex flex-col items-center sm:flex-row gap-4 justify-center">
-              <a href="mailto:insightorbit11@gmail.com">
+              <div>
                 <motion.button
+                  onClick={() => setShowModal(true)}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="px-8 py-4 bg-linear-to-r from-(--c2) to-(--c1) text-white rounded-full font-semibold flex items-center justify-center space-x-2 mx-auto shadow-sm shadow-amber-400/50 cursor-pointer"
@@ -285,8 +291,8 @@ const ContactPage = () => {
                   </svg>
                   <span>Send Email</span>
                 </motion.button>
-              </a>
-              <a href="tel:+918447659509">
+              </div>
+              {/* <a href="tel:+918447659509">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -321,11 +327,19 @@ const ContactPage = () => {
                   </svg>
                   <span>Call Now</span>
                 </motion.button>
-              </a>
+              </a> */}
             </div>
           </motion.div>
         </div>
       </div>
+      {showModal && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <RedirectModal
+            handleEmailRedirect={handleEmailRedirect}
+            setShowModal={setShowModal}
+          />
+        </div>
+      )}
     </>
   );
 };
