@@ -8,6 +8,7 @@ import ContactPage from "./pages/ContactPage";
 import Footer from "./components/Footer";
 import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicePage";
+import InsightActivationServices from "./components/InsightActivationServices";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/insight-activation-services" element={<InsightActivationServices />} />
         </Routes>
         <a
           href="https://wa.me/918447659509"

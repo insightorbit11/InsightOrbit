@@ -21,6 +21,7 @@ const Navbar = () => {
     { path: "/services", label: "Services" },
     { path: "/why-us", label: "Why InsightOrbit" },
     { path: "/contact", label: "Contact" },
+    { path: "/insight-activation-services", label: "Insight Activation Services" },
   ];
 
   return (
@@ -40,14 +41,13 @@ const Navbar = () => {
                 key={link.path}
                 to={link.path}
                 {...(link.label === "Services" ||
-                link.label === "Why InsightOrbit"
+                  link.label === "Why InsightOrbit"
                   ? { target: "_blank" }
                   : {})}
-                className={`text-sm font-medium transition-colors ${
-                  location.pathname === link.path
-                    ? "text-[#0855b1]"
-                    : "text-gray-700 hover:text-[#0855b1]"
-                }`}
+                className={`text-sm font-medium transition-colors ${location.pathname === link.path
+                  ? "text-[#0855b1]"
+                  : "text-gray-700 hover:text-[#0855b1]"
+                  }`}
               >
                 {link.label}
               </Link>
@@ -77,11 +77,10 @@ const Navbar = () => {
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsOpen(false)}
-                  className={`block py-2 text-sm font-medium ${
-                    location.pathname === link.path
-                      ? "text-[#0855b1]"
-                      : "text-gray-700"
-                  }`}
+                  className={`block py-2 text-sm font-medium ${location.pathname === link.path
+                    ? "text-[#0855b1]"
+                    : "text-gray-700"
+                    }`}
                 >
                   {link.label}
                 </Link>
