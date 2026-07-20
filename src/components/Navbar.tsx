@@ -19,9 +19,9 @@ const Navbar = () => {
     { path: "/", label: "Home" },
     { path: "/about", label: "About Us" },
     { path: "/services", label: "Services" },
+    { path: "/insight-activation-services", label: "Insight Activation Services" },
     { path: "/why-us", label: "Why InsightOrbit" },
     { path: "/contact", label: "Contact" },
-    { path: "/insight-activation-services", label: "Insight Activation Services" },
   ];
 
   return (
