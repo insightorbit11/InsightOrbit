@@ -142,10 +142,16 @@ const InsightActivationServices = () => {
                                 initial={{ opacity: 0, x: -30 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.6, delay: 0.2 }}
-                                className="bg-white/30 backdrop-blur-md border border-white/40 rounded-3xl p-8 md:p-10 shadow-lg hover:shadow-xl transition-shadow"
+                                className="bg-white/30 backdrop-blur-md border border-white/40 rounded-3xl p-8 md:p-10 shadow-lg hover:shadow-xl transition-shadow text-[17px] space-y-6"
                             >
-                                <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-medium">
-                                    Anyone can prompt an AI to write a caption. Almost no one can tell you why it will land — because that takes understanding people, not just processing patterns. Insight Activation is where we take what we've learned about your audience — their behaviour, their language, their unspoken reactions — and turn it into content your competitors' AI tools can't replicate. Not because the tools are bad. Because empathy isn't a dataset.
+                                <p>
+                                    Anyone can prompt an AI to write a caption. Almost no one can tell you why it will land — because that takes understanding people, not just processing patterns.
+                                </p>
+                                <p>
+                                    Insight Activation is where we take what we've learned about your audience — their behaviour, their language, their unspoken reactions — and turn it into content your competitors' AI tools can't replicate.
+                                </p>
+                                <p>
+                                    The limitation isn't the tools; <span className="text-[#a87e3b] font-semibold">it's that empathy can't be reduced to data.</span>
                                 </p>
                             </motion.div>
                         </div>
